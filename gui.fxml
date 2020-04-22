@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="192.0" layoutY="15.0" prefHeight="480.0" prefWidth="600.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="192.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="15.0">
+            <xAxis>
+                <NumberAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <Label layoutX="14.0" layoutY="19.0" text="R" />
+        <TextField id="RField" fx:id="rField" layoutX="31.0" layoutY="15.0" prefHeight="25.0" prefWidth="161.0" text="5" />
+        <Label layoutX="18.0" layoutY="379.0" text="Слой" />
+        <TextField fx:id="layerField" layoutX="65.0" layoutY="375.0" prefHeight="25.0" prefWidth="127.0" text="50" />
+        <CheckBox fx:id="analyticalCheckBox" layoutX="65.0" layoutY="277.0" mnemonicParsing="false" text="Точное решение" />
+        <Button fx:id="calcButton" layoutX="17.0" layoutY="416.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" text="Расчет" />
+        <TextArea fx:id="area" layoutY="480.0" prefHeight="41.0" prefWidth="800.0" />
+      <TextField id="sField" fx:id="sField" layoutX="31.0" layoutY="46.0" prefHeight="25.0" prefWidth="161.0" text="0.01" />
+      <Label layoutX="14.0" layoutY="50.0" text="s" />
+      <TextField id="TField" fx:id="TField" layoutX="31.0" layoutY="83.0" prefHeight="25.0" prefWidth="161.0" text="20" />
+      <Label layoutX="15.0" layoutY="87.0" text="T" />
+      <Label layoutX="15.0" layoutY="123.0" text="k" />
+      <TextField id="kField" fx:id="kField" layoutX="31.0" layoutY="119.0" prefHeight="25.0" prefWidth="161.0" text="0.065" />
+      <TextField id="cField" fx:id="cField" layoutX="31.0" layoutY="152.0" prefHeight="25.0" prefWidth="161.0" text="1.84" />
+      <Label layoutX="17.0" layoutY="156.0" text="c" />
+      <RadioButton fx:id="Mat" layoutX="68.0" layoutY="300.0" mnemonicParsing="false" text="Матюшкина" />
+      <RadioButton fx:id="Myak" layoutX="68.0" layoutY="325.0" mnemonicParsing="false" text="Мякушко" />
+      <RadioButton fx:id="Vol" layoutX="69.0" layoutY="349.0" mnemonicParsing="false" text="Волошин" />
+      <TextField id="IField" fx:id="IField" layoutX="32.0" layoutY="184.0" prefHeight="25.0" prefWidth="161.0" text="40" />
+      <TextField id="NField" fx:id="NField" layoutX="31.0" layoutY="221.0" prefHeight="25.0" prefWidth="161.0" text="100" />
+      <Label layoutX="17.0" layoutY="188.0" text="I">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="226.0" text="N">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
